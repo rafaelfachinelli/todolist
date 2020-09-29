@@ -45,11 +45,11 @@ Timer developed in the basic programming languages of web development for the st
 
 <p align="center"><b> :computer: WEB DESKTOP </b></p>
 
-<p align="center"><kbd><img width="450" style="border-radius: 5px" height="250" alt="RFLTimer Desktop Demo" src="./.github/demo-desktop-RFLTimer.gif"></kbd></p>
+<p align="center"><kbd><img width="450" style="border-radius: 5px" height="250" alt="todolist Desktop Demo" src="./.github/demo-desktop-todolist.gif"></kbd></p>
 
 <p align="center"><b> :iphone: WEB MOBILE </b></p>
 
-<p align="center"><kbd><img width="150" style="border-radius: 5px" height="250" alt="RFLTimer Mobile Demo" src="./.github/demo-mobile-RFLTimer.gif"></kbd></p>
+<p align="center"><kbd><img width="150" style="border-radius: 5px" height="250" alt="todolist Mobile Demo" src="./.github/demo-mobile-todolist.gif"></kbd></p>
 
 ---
 ## :hammer: **Technologies**
