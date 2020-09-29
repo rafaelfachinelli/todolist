@@ -32,7 +32,7 @@ Timer developed in the basic programming languages of web development for the st
 <div align="center">
   
 <details>
-<summary>View</summary>
+<summary>Click to View</summary>
 
 |Status|Plataform|Task|
 |:---:|:---:|:---|
