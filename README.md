@@ -12,18 +12,29 @@
 <p>
 
 <p align="center">
+ <a href="#movie_camera-demo">Demo</a> •
  <a href="#computer-about">About</a> •
  <a href="#memo-guide">Guide</a> •
- <a href="#movie_camera-demo">Demo</a> •
  <a href="#hammer-technologies">Technologies</a> •
  <a href="#boy-autor">Autor</a> •
  <a href="#page_facing_up-license">License</a>
 </p>
 
 ---
+## :movie_camera: **Demo**
+
+<p align="center"><b> :computer: WEB DESKTOP </b></p>
+
+<p align="center"><kbd><img width="450" style="border-radius: 5px" height="250" alt="todolist Desktop Demo" src=".github/demo-desktop-todolist.gif"></kbd></p>
+
+<p align="center"><b> :iphone: WEB MOBILE </b></p>
+
+<p align="center"><kbd><img width="150" style="border-radius: 5px" height="250" alt="todolist Mobile Demo" src=".github/demo-mobile-todolist.gif"></kbd></p>
+
+---
 ## :computer: About
 
-Timer developed in the basic programming languages of web development for the study of JavaScript DOM and Intervals.
+...
 
 ---
 ## :memo: **Guide**
@@ -43,17 +54,6 @@ Timer developed in the basic programming languages of web development for the st
 </details>
 
 </div>
-
----
-## :movie_camera: **Demo**
-
-<p align="center"><b> :computer: WEB DESKTOP </b></p>
-
-<p align="center"><kbd><img width="450" style="border-radius: 5px" height="250" alt="todolist Desktop Demo" src="./.github/demo-desktop-todolist.gif"></kbd></p>
-
-<p align="center"><b> :iphone: WEB MOBILE </b></p>
-
-<p align="center"><kbd><img width="150" style="border-radius: 5px" height="250" alt="todolist Mobile Demo" src="./.github/demo-mobile-todolist.gif"></kbd></p>
 
 ---
 ## :hammer: **Technologies**
