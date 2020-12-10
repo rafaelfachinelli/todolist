@@ -1,44 +1,52 @@
-const inputTarefaElement = document.querySelector('.input-tarefa');
-const btnTarefaElement = document.querySelector('.btn-tarefa');
-const tarefasElement = document.querySelector('.tarefas');
+const inputTaskElement = document.querySelector('.input--task');
+const buttonAddTaskElement = document.querySelector('.button--add');
+const tasksElement = document.querySelector('.tasks');
 
-inputTarefaElement.addEventListener('keypress', function(event) {
+inputTaskElement.addEventListener('keypress', function(event) {
   if (event.keyCode === 13) {
-    if (!inputTarefaElement.value) return;
-    createToDo(inputTarefaElement.value);
+    if (!inputTaskElement.value) return;
+    createToDo(inputTaskElement.value);
   }
 });
 
 function createRemoveButton(li) {
-  li.innerText += ' ';
   const removeButton = document.createElement('button');
-  removeButton.innerText = 'Remove';
-  removeButton.setAttribute('class', 'button--remove');
+  const iconRemove = document.createElement('img');
+  iconRemove.setAttribute('src', './assets/img/delete.svg');
+  iconRemove.setAttribute('class', 'icon--remove');
+  removeButton.appendChild(iconRemove);
+  removeButton.setAttribute('class', 'button');
+  removeButton.classList.add('button--remove');
   removeButton.setAttribute('title', 'Remove this to do.');
   li.appendChild(removeButton);
 }
 
 function clearInput() {
-  inputTarefaElement.value = '';
-  inputTarefaElement.focus;
+  inputTaskElement.value = '';
+  inputTaskElement.focus;
 }
 
-function createLi() {
+function createLiElement() {
   return document.createElement('li');
 }
 
 function createToDo(inputText) {
-  const liElement = createLi();
+  const liElement = createLiElement();
+  liElement.setAttribute('class', 'task');
   liElement.innerText = inputText;
-  tarefasElement.appendChild(liElement);
   createRemoveButton(liElement);
+  insertTaskInToDoList(liElement);
+}
+
+function insertTaskInToDoList(liElement) {
+  tasksElement.appendChild(liElement);
   saveToDoList();
   clearInput();
 }
 
-btnTarefaElement.addEventListener('click', function(event) {
-  if (!inputTarefaElement.value) return;
-  createToDo(inputTarefaElement.value);
+buttonAddTaskElement.addEventListener('click', function(event) {
+  if (!inputTaskElement.value) return;
+  createToDo(inputTaskElement.value);
 });
 
 document.addEventListener('click', function(event) {
@@ -50,7 +58,7 @@ document.addEventListener('click', function(event) {
 });
 
 function saveToDoList() {
-  const liList = tarefasElement.querySelectorAll('li');
+  const liList = tasksElement.querySelectorAll('li');
   const toDoListText = [];
 
   for (let toDo of liList) {

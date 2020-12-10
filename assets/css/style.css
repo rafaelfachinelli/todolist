@@ -1,6 +1,12 @@
 :root {
   --primary-color: rgb(13, 106, 134);
   --primary-color-darker: rgb(10, 45, 55);
+  --button-color-add: rgb(17, 194, 70);
+  --button-color-add-darker: rgb(13, 153, 55);
+  --button-color-remove: rgb(145, 76, 71);
+  --button-color-remove-darker: rgb(136, 30, 22);
+
+  font-size: 62.5%;
 }
 
 * {
@@ -11,49 +17,92 @@
 body {
   margin: 0;
   padding: 0;
+
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1.5rem;
 }
 
 .container {
-  max-width: 640px;
-  margin: 20px auto;
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 2rem;
+
   background: #fff;
-  padding: 20px;
   border-radius: .8rem;
 }
 
-form input,
-form label,
-form button {
-  display: block;
+.banner {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+
+.insert {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
   width: 100%;
-  margin-bottom: 10px;
-}
+  height: 5rem;
+  position: relative;
 
-form input {
-  font-size: 24px;
-  height: 50px;
-}
-
-form input:focus {
-  outline: 1px solid var(--primary-color);
-}
-
-form button {
-  border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 30px;
+  font-size: 2.4rem;
+  border: 1px solid var(--primary-color);
   border-radius: .8rem;
+  outline: none;
 }
 
-form button:hover {
-  background: var(--primary-color-darker);
+.input--task {
+
+}
+
+.tasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.task {
+  list-style: url('../img/task.png');
+  margin: .25rem 0;
+}
+
+.button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: all .2s;
+  margin-left: 1rem;
+  padding: .5rem;
+
+  color: #fff;
+  border: none;
+  border-radius: .8rem;
+  cursor: pointer;
+}
+
+.button--add {
+  width: 7rem;
+  background: var(--button-color-add);
+}
+
+.button--add:hover {
+  background: var(--button-color-add-darker);
+}
+
+.button--remove {
+  font-size: 1.2rem;
+  background: var(--button-color-remove);
+}
+
+.button--remove:hover {
+  background: var(--button-color-remove-darker);
+}
+
+.icon--remove {
+  pointer-events: none;
 }

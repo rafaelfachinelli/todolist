@@ -4,22 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modelo</title>
+  <title>To Do List | Rafael Fachinelli</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
   <section class="container">
-    <h1>TO DO List</h1>
-    <p>
-      <input type="text" class="input-tarefa">
-      <button class="btn-tarefa">Add</button>
-    </p>
-
-    <ul class="tarefas"></ul>
+    <img class="banner" src="./assets/img/banner.svg"/>
+    <div class="insert">
+      <input class="input input--task" type="text" placeholder="">
+      <button class="button button--add" title="Add new task in to do list.">Add</button>
+    </div>
+    <ul class="tasks"></ul>
   </section>
-  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
