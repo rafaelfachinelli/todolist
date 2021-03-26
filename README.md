@@ -73,7 +73,11 @@ The following tools were used in the build of the project:
 ---
 ## :boy: **Author**
 
-https://github.com/rafaelfachinelli/rafaelfachinelli/blob/master/.github/author.svg
+<div align="center">
+  
+[![Author](https://github.com/rafaelfachinelli/rafaelfachinelli/blob/master/.github/author.svg)](https://www.linkedin.com/in/rafaelfachinelli/)
+
+</div>
 
 ---
 ## :page_facing_up: **License**
